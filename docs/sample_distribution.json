@@ -8,16 +8,16 @@
     "java": {
         "oracle": "http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"
     },
-    "rss": "https://forum.westeroscraft.com/forum/news.2/index.rss",
+    "rss": "",
     "servers": [
         {
-            "id": "WesterosCraft-1.11.2",
+            "id": "WesterosCraft-1.12.2",
             "name": "WesterosCraft Production Server",
             "description": "Main WesterosCraft server. Connect to enter the Realm.",
             "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/server-prod.png",
             "version": "3.9.4",
-            "address": "mc.westeroscraft.com",
-            "minecraftVersion": "1.11.2",
+            "address": "game14-fr.hosterfy.com",
+            "minecraftVersion": "1.12.2",
             "discord": {
                 "shortId": "Production",
                 "largeImageText": "WesterosCraft Production Server",

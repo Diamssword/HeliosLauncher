@@ -2819,8 +2819,14 @@ input:checked + .toggleSwitchSlider:before {
 }
 #newsErrorLoading {
     display: flex;
-    width: 168.92px;
+    width: 90vw;
+    height: 80vh;
 }
+#newsErrorLoading iframe{
+    width: 100%;
+    height: 100%;
+}
+
 #nELoadSpan {
     white-space: pre;
 }
@@ -2981,7 +2987,8 @@ input:checked + .toggleSwitchSlider:before {
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    image-rendering: pixelated;
+    background-size: 70%;
 }
 
 /* Avatar edit overlay. */
