@@ -27,7 +27,7 @@ const {
     discoverBestJvmInstallation,
     latestOpenJDK,
     extractJdk
-}                             = require('helios-core/java')
+}                             = require('./assets/js/java/JavaGuard')
 
 // Internal Requirements
 const DiscordWrapper          = require('./assets/js/discordwrapper')
@@ -105,7 +105,9 @@ document.getElementById('launch_button').addEventListener('click', async e => {
     loggerLanding.info('Launching game..')
     try {
         const server = (await DistroAPI.getDistribution()).getServerById(ConfigManager.getSelectedServer())
+      
         const jExe = ConfigManager.getJavaExecutable(ConfigManager.getSelectedServer())
+       
         if(jExe == null){
             await asyncSystemScan(server.effectiveJavaOptions)
         } else {
